@@ -28,9 +28,9 @@ mongoose.connection.on('error', (err) => {
 });
 
 // Define routes
-app.use('/api/users', require('./routes/user-routes'));
-app.use('/api/thoughts', require('./routes/thought-routes'));
-app.use('/api/reactions', require('./routes/reaction-routes'));
+app.use('/api/users', require('./routes/user'));
+app.use('/api/thoughts', require('./routes/thought'));
+app.use('/api/reactions', require('./routes/reaction'));
 
 // Default route for handling unknown endpoints
 app.use((req, res) => {

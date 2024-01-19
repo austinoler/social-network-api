@@ -4,7 +4,7 @@ const router = express.Router();
 const {
   createReaction,
   deleteReaction
-} = require('../controllers/reaction-controller');
+} = require('../controllers/reaction');
 
 // Define routes
 router.post('/', createReaction);
